@@ -11,27 +11,6 @@
          overflow: auto;
          border: 1px solid black;
      }
-
-     .LockOff {
-         display: none;
-         visibility: hidden;
-      }
-
-      .LockOn {
-         display: block;
-         visibility: visible;
-         position: absolute;
-         z-index: 999;
-         top: 0px;
-         left: 0px;
-         width: 1024%;
-         height: 768%;
-         background-color: #ccc;
-         text-align: center;
-         padding-top: 20%;
-         filter: alpha(opacity=75);
-         opacity: 0.75;
-      }
    </style>
 
     <script src="http://static.blog.csdn.net/scripts/jquery.js" type="text/javascript"></script>
@@ -115,7 +94,7 @@
 
             if ('WebSocket' in window) {
                 Log("您的浏览器支持WebSocket. 您可以尝试连接到聊天服务器!", "OK");
-                document.getElementById("Connection").value = "127.0.0.1:8080/web-chat/chat";
+                document.getElementById("Connection").value = "127.0.0.1:8080/web-chat/websocket";
             } else {
                 Log("您的浏览器不支持WebSocket。请选择其他的浏览器再尝试连接服务器。", "ERROR");
                 document.getElementById("ToggleConnection").disabled = true;

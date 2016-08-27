@@ -1,4 +1,4 @@
-package com.fanyl.ws;
+﻿package com.fanyl.ws;
 
 import java.io.IOException;
 import java.util.concurrent.CopyOnWriteArraySet;
@@ -10,7 +10,7 @@ import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
 
-@ServerEndpoint("/chat")
+@ServerEndpoint("/websocket")
 public class WebChatEndpoint {
 	
 	private static int count = 0;
