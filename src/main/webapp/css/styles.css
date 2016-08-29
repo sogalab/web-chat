@@ -52,7 +52,7 @@ input, button {
   height: 53rem;
   overflow: hidden;
   top: 3px;
-  left: 35%;
+  left: 38%;
   background: -webkit-linear-gradient(top, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
   background: linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
   -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.17, -0.65, 0.665, 1.25);
@@ -552,7 +552,7 @@ a:active {
 .card {
   position: relative;
   left: -32px;
-  padding: 16px 32px 16px 64px;
+  padding: 16px 64px 16px 16px;
   margin: 8px;
   x-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.5);
@@ -563,7 +563,7 @@ a:active {
 .card:hover {
   position: relative;
   right: 100%;
-  margin-left: -32px;
+  margin-left: -48px;
   box-shadow:
     0 -8px 8px -8px rgba(0, 0, 0, 0.5),
     0 8px 8px -8px rgba(0, 0, 0, 0.5);
