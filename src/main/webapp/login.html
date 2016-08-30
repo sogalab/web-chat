@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh">
 <head>
 	<meta charset="UTF-8">
@@ -9,7 +9,7 @@
 <body>
 	<div class="cont">
 	  <div class="demo">
-	    <div class="login">
+	    <div class="login inactive" style="display: none;">
 	      <div class="login__check"></div>
 	      <div class="login__form">
 	        <div class="login__row">
@@ -30,7 +30,7 @@
 	    </div>
 
 
-	    <div class="app">
+	    <div class="app active" style="display: block;">
 	      <div class="app__top">
 	        <div class="app__menu-btn">
 	          <span></span>
@@ -115,7 +115,7 @@
 	    </div>
 
 
-		<div class='card-holder'>
+		<div class='card-holder active' style="display: block;">
 		  <div class='card-wrapper'>
 		    <a href='#'>
 		      <div class='card bg-01'>
@@ -168,7 +168,7 @@
 		</div>
 
 
-	    <div class="app" style="left:32rem;width:15rem;border-right:1px solid #999;">
+	    <div class="app active" style="left:32rem;width:15rem;border-right:1px solid #999;height:52rem;display: block;">
 	      <div class="app__top" style="height:52rem;padding:2rem 1.5rem;overflow:auto;">
 	        <p class="app__hello" style="padding:15px 10px;border:1px solid #fff;border-radius:8px;font-size:1rem;margin-bottom:5px;text-align:left;background:rgba(0, 0, 0, 0.5);opacity:0.8;">
 	        管理员
@@ -179,7 +179,7 @@
 
 
 
-	    <div class="app" style="left:47rem;width:60rem;">
+	    <div class="app active" style="left:47rem;width:60rem;display: block;height:52rem;">
 	      <div class="app__bot" style="height:6rem;">
 	        <div class="app__meetings">
 	          <div class="app__meeting">
@@ -193,28 +193,40 @@
 	          </div>
 	      	</div>
 	      </div>
-	      <div class="app__top">
-	        <p class="app__hello">Fan Yongliang</p>
-	        <div class="app__user">
-	          <img src="images/head.png" alt="" class="app__user-photo" />
-	          <span class="app__user-notif">1</span>
-	        </div>
-	        <div class="app__month">
-	          <span class="app__month-btn left"></span>
-	          <p class="app__month-name">当前在线人数：12</p>
-	          <span class="app__month-btn right"></span>
-	        </div>
+	      <div class="app__top" style="padding:2rem 1.5rem;height:35rem;border:1px solid #fff;">
+			<div class="chatbox" style="float:left;position: relative;margin-bottom: 10px;">
+				<div style="text-align:left">
+					<span style="font-weight:900;color:#fff">管理员</span>
+					&nbsp;&nbsp;
+					<span style="color:#d2d2d2;">21:37:36</span>
+				</div>
+				<div id="b10ea85f21_37_36" class="chat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #cfffcf;float: left;margin-left:3.5rem;">
+					<img src="images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;left: 0;position: absolute;border-radius: 100%;">
+					......
+				</div>
+			</div>
+			<div class="clearboth" style="clear: both;"></div>
+			<div class="chat_msg" style="border-radius: 5px;background-color: #f6f6f6;color: #a0a0a0;text-align: center;margin-bottom: 15px;padding-top: 5px;padding-bottom: 5px;">
+				<div>22:04:56</div>
+				通知：管理员加入了聊天室
+			</div>
+			<div class="chatbox" style="float:right;position: relative;margin-bottom: 10px;">
+				<div style="text-align:right">
+					<span style="color:#d2d2d2;">23:19:29</span>
+					&nbsp;&nbsp;
+					<span style="font-weight:900;color:#fff">我</span>
+				</div>
+				<div id="a2dea84723_19_29" class="chat selfchat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:3.5rem;">
+					<img src="images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
+					ABC
+				</div>
+			</div>
+			<div class="clearboth" style="clear: both;"></div>
 	      </div>
-	      <div class="app__bot">
-	          <div class="app__meeting">
-	            <img src="images/head.png" alt="" class="app__meeting-photo" />
-	            <p class="app__meeting-name">Feed the cat!</p>
-	            <br />
-	            <p class="app__meeting-info">
-	              <span class="app__meeting-time">1 - 3pm</span>
-	              <span class="app__meeting-place">Real-life</span>
-	            </p>
-	          </div>
+	      <div class="app__bot" style="height:11rem;">
+	      		<span class="span-message" style="color:#aaa;position:absolute;margin:13px;">按Ctrl + Enter键发送消息</span>
+                <div class="text-message" contenteditable="true" placeholder="按Ctrl + Enter键发送消息" style=	"border: 1px solid #c6cede !important;overflow: auto;vertical-align: top;outline: none;resize: none;border: 1px #c8c8c8 solid;box-sizing: border-box;width: 100%;margin: 0; padding: 12px;font-size: 14px;height: 11rem;color: #aaa;"></div>
+				<button style="position: absolute;right: 0;bottom: 0;width: 8rem;height: 3rem;color: #333;background: #fff;border: 1px solid #999;margin: 0 1px 1px 0;border-radius: 8px;">发送</button>
 	        </div>
 	      </div>
 	    </div>
@@ -263,6 +275,7 @@
 	            }, submitPhase2);
 	        }, submitPhase1);
 	    });
+
 	    $(document).on('click', '.app__logout', function (e) {
 	        if (animating)
 	            return;
@@ -282,6 +295,11 @@
 	            $(that).removeClass('clicked');
 	        }, logoutPhase1);
 	    });
+
+	    $(document).on('click', '.text-message', function (e) {
+	    	$('.span-message').text('');
+	    });
+
 	});
 	</script>
 </body>
