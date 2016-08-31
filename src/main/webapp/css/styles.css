@@ -214,9 +214,9 @@ input, button {
   opacity: 1;
 }
 .app.active .app__logout {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 .app__top {
   position: relative;
@@ -414,13 +414,12 @@ input, button {
 }
 .app__logout {
   position: absolute;
-  bottom: 3.3rem;
+  top: 0.5rem;
   right: 3.3rem;
   width: 4.6rem;
   height: 4.6rem;
   margin-right: -2.3rem;
   margin-bottom: -2.3rem;
-  background: #FC3768;
   color: #fff;
   font-size: 2rem;
   border-radius: 50%;
