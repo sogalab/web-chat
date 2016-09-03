@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.dao.ISchedule">
+	<resultMap id="ScheduleMap" type="ScheduleBean">
+		<id property="id" column="id" />
+		<result property="title" column="title" />
+		<result property="startTime" column="startTime" />
+		<result property="endTime" column="endTime" />
+		<result property="allDay" column="allDay" />
+		<result property="color" column="color" />
+		<result property="userID" column="userID" />
+		<result property="isFinish" column="isFinish" />
+		<result property="createTime" column="createTime" />
+	</resultMap>
+	
+	<insert id="save" parameterType="ScheduleBean">
+		insert into Schedule 
+		(
+			id,
+			title,
+			startTime,
+			endTime,
+			allDay,
+			color,
+			userID,
+			isFinish,
+			createTime
+		)
+		values
+		(
+			#{id},
+			#{title},
+			#{startTime},
+			#{endTime},
+			#{allDay},
+			#{color},
+			#{userID},
+			#{isFinish},
+			#{createTime}
+		)
+	</insert>
+	<select id="listByUserID" parameterType="String" resultMap = "ScheduleMap">
+		select * from Schedule
+		where userID = #{userID}
+	</select>
+	<select id="all" resultMap = "ScheduleMap">
+		select * from Schedule
+	</select>
+	<update id="update" parameterType="ScheduleBean">
+		update Schedule
+		set
+			title = #{title},
+			startTime = #{startTime},
+			endTime = #{endTime},
+			allDay = #{allDay},
+			color = #{color},
+			userID = #{userID},
+			isFinish = #{isFinish},
+			createTime = #{createTime}
+		where
+			id = #{id}
+	</update>
+	
+</mapper>
