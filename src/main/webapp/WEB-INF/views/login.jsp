@@ -1,34 +1,22 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getServerName() + ":"
+			+ request.getServerPort() + path + "/";
+	String basePath2 = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
+%>
 <!doctype html>
 <html lang="zh">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="/webchat/resources/css/styles.css">
 </head>
 <body>
 	<div class="cont">
-	  <div class="demo">
-	    <div class="login inactive" style="display: none;">
-	      <div class="login__check"></div>
-	      <div class="login__form">
-	        <div class="login__row">
-	          <svg class="login__icon name svg-icon" viewBox="0 0 20 20">
-	            <path d="M0,20 a10,8 0 0,1 20,0z M10,0 a4,4 0 0,1 0,8 a4,4 0 0,1 0,-8" />
-	          </svg>
-	          <input type="text" class="login__input name" placeholder="Username"/>
-	        </div>
-	        <div class="login__row">
-	          <svg class="login__icon pass svg-icon" viewBox="0 0 20 20">
-	            <path d="M0,20 20,20 20,8 0,8z M10,13 10,16z M4,8 a6,8 0 0,1 12,0" />
-	          </svg>
-	          <input type="password" class="login__input pass" placeholder="Password"/>
-	        </div>
-	        <button type="button" class="login__submit">游客登录</button>
-	        <p class="login__signup">还没有账号? &nbsp;<a href="#" target="_blank"></a></p>
-	      </div>
-	    </div>
-
 
 	    <div class="app active" style="display: block;">
 	      <div class="app__top" style="height:16rem;">
@@ -37,13 +25,13 @@
 	        </div>
 	        <p class="app__hello" style="margin-bottom:2rem;">Fan Yongliang</p>
 	        <div class="app__user" style="margin-bottom:0;">
-	          <img src="images/head.png" alt="" class="app__user-photo" style="border-color:#fff6d9;border:3px solid transparent;" />
+	          <img src="/webchat/resources/images/head.png" alt="" class="app__user-photo" style="border-color:#fff6d9;border:3px solid transparent;" />
 	        </div>
 	      </div>
 	      <div class="app__bot" style="height:36rem;">
 	        <div class="app__meetings">
 	          <div class="app__meeting">
-	            <img src="images/head.png" alt="" class="app__meeting-photo" />
+	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
 	            <p class="app__meeting-name">Feed the cat</p>
 	            <br />
 	            <p class="app__meeting-info">
@@ -52,7 +40,7 @@
 	            </p>
 	          </div>
 	          <div class="app__meeting">
-	            <img src="images/head.png" alt="" class="app__meeting-photo" />
+	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
 	            <p class="app__meeting-name">Feed the cat!</p>
 	            <br />
 	            <p class="app__meeting-info">
@@ -61,7 +49,7 @@
 	            </p>
 	          </div>
 	          <div class="app__meeting">
-	            <img src="images/head.png" alt="" class="app__meeting-photo" />
+	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
 	            <p class="app__meeting-name">FEED THIS CAT ALREADY!!!</p>
 	            <br />
 	            <p class="app__meeting-info">
@@ -69,7 +57,7 @@
 	            </p>
 	          </div>
 	          <div class="app__meeting">
-	            <img src="images/head.png" alt="" class="app__meeting-photo" />
+	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
 	            <p class="app__meeting-name">FEED THIS CAT ALREADY!!!</p>
 	            <br />
 	            <p class="app__meeting-info">
@@ -77,7 +65,7 @@
 	            </p>
 	          </div>
 	          <div class="app__meeting">
-	            <img src="images/head.png" alt="" class="app__meeting-photo" />
+	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
 	            <p class="app__meeting-name">Feed the cat!</p>
 	            <br />
 	            <p class="app__meeting-info">
@@ -86,7 +74,7 @@
 	            </p>
 	          </div>
 	          <div class="app__meeting">
-	            <img src="images/head.png" alt="" class="app__meeting-photo" />
+	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
 	            <p class="app__meeting-name">Feed the cat!</p>
 	            <br />
 	            <p class="app__meeting-info">
@@ -95,7 +83,7 @@
 	            </p>
 	          </div>
 	          <div class="app__meeting">
-	            <img src="images/head.png" alt="" class="app__meeting-photo" />
+	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
 	            <p class="app__meeting-name">Feed the cat!</p>
 	            <br />
 	            <p class="app__meeting-info">
@@ -181,7 +169,7 @@
 	      <div class="app__bot" style="height:6rem;">
 	        <div class="app__meetings">
 	          <div class="app__meeting">
-	            <img src="images/head.png" alt="" class="app__meeting-photo" />
+	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
 	            <p class="app__meeting-name">Feed the cat</p>
 	            <br />
 	            <p class="app__meeting-info">
@@ -194,7 +182,7 @@
 	          </div>
 	      	</div>
 	      </div>
-	      <div class="app__top" style="padding:2rem 1.5rem;height:35rem;border:1px solid #fff;overflow:auto;border-radius:8px;">
+	      <div id="content" class="app__top" style="padding:2rem 1.5rem;height:35rem;border:1px solid #fff;overflow:auto;border-radius:8px;">
 			<div class="chatbox" style="float:left;position: relative;margin-bottom: 10px;">
 				<div style="text-align:left">
 					<span style="font-weight:900;color:#fff">管理员</span>
@@ -202,7 +190,7 @@
 					<span style="color:#d2d2d2;">21:37:36</span>
 				</div>
 				<div id="b10ea85f21_37_36" class="chat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #cfffcf;float: left;margin-left:4rem;">
-					<img src="images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;left: 0;position: absolute;border-radius: 100%;">
+					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;left: 0;position: absolute;border-radius: 100%;">
 					<div class="" style="left:3.6rem;border-right: 5px solid #cfffcf;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
 					<div style="text-align:left;">
 						......1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
@@ -222,7 +210,7 @@
 					<span style="font-weight:900;color:#fff">我</span>
 				</div>
 				<div id="a2dea84723_19_29" class="chat selfchat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
-					<img src="images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
+					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
 					<div class="" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
 					<div style="text-align:left;">
 						ABC<br>
@@ -243,7 +231,7 @@
 					<span style="font-weight:900;color:#fff">我</span>
 				</div>
 				<div id="a2dea84723_19_29" class="chat selfchat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
-					<img src="images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
+					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
 					<div class="" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
 					<div style="text-align:left;">
 						ABC
@@ -258,7 +246,7 @@
 					<span style="font-weight:900;color:#fff">我</span>
 				</div>
 				<div id="a2dea84723_19_29" class="chat selfchat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
-					<img src="images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
+					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
 					<div class="" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
 					<div style="text-align:left;">
 						ABC
@@ -273,7 +261,7 @@
 					<span style="font-weight:900;color:#fff">我</span>
 				</div>
 				<div id="a2dea84723_19_29" class="chat selfchat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
-					<img src="images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
+					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
 					<div class="" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
 					<div style="text-align:left;">
 						<img src="http://img.blog.csdn.net/20160811175949152" title="使用FullCalendar做一个自己的日程管理（三）- 持久化篇" style="max-width:480px;">
@@ -288,7 +276,7 @@
 					<span style="font-weight:900;color:#fff">我</span>
 				</div>
 				<div id="a2dea84723_19_29" class="chat selfchat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
-					<img src="images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
+					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
 					<div class="" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
 					<div style="text-align:left;">
 						ABC
@@ -303,7 +291,7 @@
 					<span style="font-weight:900;color:#fff">我</span>
 				</div>
 				<div id="a2dea84723_19_29" class="chat selfchat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
-					<img src="images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
+					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
 					<div class="" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
 					<div style="text-align:left;">
 						<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/5c/huanglianwx_thumb.gif"  style="max-width:480px;">
@@ -316,87 +304,180 @@
 	      </div>
 		  <div class="app__bot" style="height:3rem;background:rgba(0, 0, 0, 0.5);">
 		  	<a class="emoji" style="width:25px;float:left;margin:5px 0 0 5px;" data-toggle="popover" data-placement="top" title="表情"><img style="width:100%;" class="img_emoji" src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/5c/huanglianwx_thumb.gif"></a>
-		  	<button style="position: absolute;right: 3px;bottom: 0;width: 8rem;height: 2.8rem;color: #333;background: #fff;border: 1px solid #999;margin: 0 1px 1px 0;border-radius: 8px;">发送</button>
+		  	<button onkeydown="send(event)" onclick="sendMsg()" style="position: absolute;right: 3px;bottom: 0;width: 8rem;height: 2.8rem;color: #333;background: #fff;border: 1px solid #999;margin: 0 1px 1px 0;border-radius: 8px;">发送</button>
 		  </div>
 	      <div class="app__bot" style="height:8rem;border-radius:8px;">
                 <span class="span-message" style="color:#aaa;position:absolute;margin:13px;">按Ctrl + Enter键发送消息</span>
-				<div class="text-message" contenteditable="true" placeholder="按Ctrl + Enter键发送消息" style=	"border: 1px solid #c6cede !important;overflow: auto;vertical-align: top;outline: none;resize: none;border: 1px #c8c8c8 solid;box-sizing: border-box;width: 100%;margin: 0; padding: 12px;font-size: 14px;height: 8rem;color: #aaa;"></div>
+				<div id="msg" class="text-message" contenteditable="true" placeholder="按Ctrl + Enter键发送消息" style=	"border: 1px solid #c6cede !important;overflow: auto;vertical-align: top;outline: none;resize: none;border: 1px #c8c8c8 solid;box-sizing: border-box;width: 100%;margin: 0; padding: 12px;font-size: 14px;height: 8rem;color: #aaa;"></div>
 
 	        </div>
 	      </div>
-	    </div>
-
-
-
-
-
-	  </div>
 	</div>
 
 	<script src="http://csdnimg.cn/public/common/libs/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+	
 	<script>
-	$(document).ready(function () {
-	    var animating = false, submitPhase1 = 1100, submitPhase2 = 400, logoutPhase1 = 800, $login = $('.login'), $app = $('.app');
-	    function ripple(elem, e) {
-	        $('.ripple').remove();
-	        var elTop = elem.offset().top, elLeft = elem.offset().left, x = e.pageX - elLeft, y = e.pageY - elTop;
-	        var $ripple = $('<div class=\'ripple\'></div>');
-	        $ripple.css({
-	            top: y,
-	            left: x
-	        });
-	        elem.append($ripple);
-	    }
-	    ;
-	    $(document).on('click', '.login__submit', function (e) {
-	        if (animating)
-	            return;
-	        animating = true;
-	        var that = this;
-	        ripple($(that), e);
-	        $(that).addClass('processing');
-	        setTimeout(function () {
-	            $(that).addClass('success');
-	            setTimeout(function () {
-	                $app.show();
-	                $app.css('top');
-	                $app.addClass('active');
-	            }, submitPhase2 - 70);
-	            setTimeout(function () {
-	                $login.hide();
-	                $login.addClass('inactive');
-	                animating = false;
-	                $(that).removeClass('success processing');
-	            }, submitPhase2);
-	        }, submitPhase1);
-	    });
-
-	    $(document).on('click', '.app__logout', function (e) {
-	        if (animating)
-	            return;
-	        $('.ripple').remove();
-	        animating = true;
-	        var that = this;
-	        $(that).addClass('clicked');
-	        setTimeout(function () {
-	            $app.removeClass('active');
-	            $login.show();
-	            $login.css('top');
-	            $login.removeClass('inactive');
-	        }, logoutPhase1 - 120);
-	        setTimeout(function () {
-	            $app.hide();
-	            animating = false;
-	            $(that).removeClass('clicked');
-	        }, logoutPhase1);
-	    });
-
-	    $(document).on('click', '.text-message', function (e) {
-	    	$('.span-message').text('');
-	    });
-
-	});
+		$(document).ready(function () {
+		    var animating = false, submitPhase1 = 1100, submitPhase2 = 400, logoutPhase1 = 800, $login = $('.login'), $app = $('.app');
+		    function ripple(elem, e) {
+		        $('.ripple').remove();
+		        var elTop = elem.offset().top, elLeft = elem.offset().left, x = e.pageX - elLeft, y = e.pageY - elTop;
+		        var $ripple = $('<div class=\'ripple\'></div>');
+		        $ripple.css({
+		            top: y,
+		            left: x
+		        });
+		        elem.append($ripple);
+		    }
+		    
+		    $(document).on('click', '.login__submit', function (e) {
+		        if (animating)
+		            return;
+		        animating = true;
+		        var that = this;
+		        ripple($(that), e);
+		        $(that).addClass('processing');
+		        setTimeout(function () {
+		            $(that).addClass('success');
+		            setTimeout(function () {
+		                $app.show();
+		                $app.css('top');
+		                $app.addClass('active');
+		            }, submitPhase2 - 70);
+		            setTimeout(function () {
+		                $login.hide();
+		                $login.addClass('inactive');
+		                animating = false;
+		                $(that).removeClass('success processing');
+		            }, submitPhase2);
+		        }, submitPhase1);
+		    });
+	
+		    $(document).on('click', '.app__logout', function (e) {
+		        if (animating)
+		            return;
+		        $('.ripple').remove();
+		        animating = true;
+		        var that = this;
+		        $(that).addClass('clicked');
+		        setTimeout(function () {
+		            $app.removeClass('active');
+		            $login.show();
+		            $login.css('top');
+		            $login.removeClass('inactive');
+		        }, logoutPhase1 - 120);
+		        setTimeout(function () {
+		            $app.hide();
+		            animating = false;
+		            $(that).removeClass('clicked');
+		        }, logoutPhase1);
+		    });
+	
+		    $(document).on('click', '.text-message', function (e) {
+		    	$('.span-message').text('');
+		    });
+	
+		});
 	</script>
+	
+	<script>
+		var path = '<%=basePath%>';
+		var uid=${uid eq null?-1:uid};
+		if(uid==-1){
+			location.href="<%=basePath2%>";
+		}
+		var from=uid;
+		var fromName='${name}';
+		var to = uid == 1?2:1;
+		
+		var websocket;
+		
+		if ('WebSocket' in window) {
+			websocket = new WebSocket("ws://" + path + "/ws?uid="+uid);
+		} else if ('MozWebSocket' in window) {
+			websocket = new MozWebSocket("ws://" + path + "/ws"+uid);
+		} else {
+			websocket = new SockJS("http://" + path + "/ws/sockjs"+uid);
+		}
+		
+		websocket.onopen = function(event) {
+			console.log("WebSocket:已连接");
+			console.log(event);
+		};
+		
+		websocket.onmessage = function(event) {
+			var data=JSON.parse(event.data);
+			console.log("WebSocket:收到一条消息",data);
+			var textCss=data.from==-1?"sfmsg_text":"fmsg_text";
+			$("#content").append("<div class='fmsg'><label class='name'>"+data.fromName+"&nbsp;"+data.date+"</label><div class='"+textCss+"'>"+data.text+"</div></div>");
+			scrollToBottom();
+		};
+		
+		websocket.onerror = function(event) {
+			console.log("WebSocket:发生错误 ");
+			console.log(event);
+		};
+		
+		websocket.onclose = function(event) {
+			console.log("WebSocket:已关闭");
+			console.log(event);
+		};
+		
+		function sendMsg(){
+			var v=$("#msg").html();
+			if(v==""){
+				return;
+			}else{
+				var data={};
+				data["from"]=from;
+				data["fromName"]=fromName;
+				data["to"]=to;
+				data["text"]=v;
+				websocket.send(JSON.stringify(data));
+				$("#content").append("<div class='tmsg'><label class='name'>我&nbsp;"+new Date().Format("yyyy-MM-dd hh:mm:ss")+"</label><div class='tmsg_text'>"+data.text+"</div></div>");
+				scrollToBottom();
+				$("#msg").html("");
+			}
+		}
+		
+		function scrollToBottom(){
+			var div = document.getElementById('content');
+			div.scrollTop = div.scrollHeight;
+		}
+		
+		Date.prototype.Format = function (fmt) { //author: meizz 
+		    var o = {
+		        "M+": this.getMonth() + 1, //月份 
+		        "d+": this.getDate(), //日 
+		        "h+": this.getHours(), //小时 
+		        "m+": this.getMinutes(), //分 
+		        "s+": this.getSeconds(), //秒 
+		        "q+": Math.floor((this.getMonth() + 3) / 3), //季度 
+		        "S": this.getMilliseconds() //毫秒 
+		    };
+		    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+		    for (var k in o)
+		    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+		    return fmt;
+		}
+		
+		function send(event){
+			var code;
+			if(window.event){
+				code = window.event.keyCode; // IE
+			}else{
+				code = e.which; // Firefox
+			}
+			if(code==13){ 
+				sendMsg();            
+			}
+		}
+		
+		function clearAll(){
+			$("#content").empty();
+		}
+	</script>
+	
 	<audio id="music">
 	    <source src="http://w.qq.com/audio/classic.mp3" type="audio/mpeg" />
 	</audio>

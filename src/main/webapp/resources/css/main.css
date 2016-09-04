@@ -1,0 +1,584 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 10px;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    font-size: 40%;
+  }
+}
+
+svg {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  overflow: visible;
+}
+
+.svg-icon {
+  cursor: pointer;
+}
+
+.svg_icon path {
+  stroke: rgba(255, 255, 255, 0.6);
+  fill: none;
+  stroke-width: 1;
+}
+
+input, button {
+  border: none;
+}
+
+.bg {
+  position: relative;
+  height: 100%;
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  overflow: hidden;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.login {
+  position: absolute;
+  width: 365px;
+  height: 635px;
+  overflow: hidden;
+  top: 2px;
+  left: 36%;
+  background: -webkit-linear-gradient(top, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(to bottom, rgba(146, 135, 187, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.login_icon {
+  position: absolute;
+  top: 195px;
+  left: 155px;
+  width: 165px;
+  height: 35px;
+  background: #fff;
+  -webkit-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.login_icon:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 35px;
+  height: 65px;
+  background: #fff;
+  box-shadow: inset -0.2rem -2rem 2rem rgba(0, 0, 0, 0.2);
+}
+.login_form {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  padding: 35px 25px;
+  text-align: center;
+}
+.login_input_div {
+  height: 55px;
+  padding-top: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.login_input_icon {
+  margin-bottom: -5px;
+  margin-right: 5px;
+}
+.login_input_icon.name path {
+  stroke-dasharray: 73.50196075439453;
+  stroke-dashoffset: 73.50196075439453;
+  -webkit-animation: animatePath 2s 0.5s forwards;
+          animation: animatePath 2s 0.5s forwards;
+}
+.login_input_icon.pass path {
+  stroke-dasharray: 92.10662841796875;
+  stroke-dashoffset: 92.10662841796875;
+  -webkit-animation: animatePath 2s 0.5s forwards;
+          animation: animatePath 2s 0.5s forwards;
+}
+.login_input {
+  display: inline-block;
+  width: 235px;
+  height: 100%;
+  padding-left: 25px;
+  font-size: 15px;
+  background: transparent;
+  color: #FDFCFD;
+}
+.login_submit {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  margin: 55px 0 25px;
+  color: rgba(255, 255, 255, 0.8);
+  background: #FF3366;
+  font-size: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
+          transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
+}
+.login_submit:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -18px;
+  margin-top: -18px;
+  width: 35px;
+  height: 35px;
+  border: 2px dotted #fff;
+  border-radius: 50%;
+  border-left: none;
+  border-bottom: none;
+  -webkit-animation: rotate 0.5s infinite linear;
+          animation: rotate 0.5s infinite linear;
+  -webkit-transition: opacity 0.1s 0.4s;
+          transition: opacity 0.1s 0.4s;
+  opacity: 0;
+}
+.login_submit.processing {
+  width: 45px;
+  font-size: 0;
+}
+.login_submit.processing:after {
+  opacity: 1;
+}
+.login_submit.success {
+  -webkit-transition: -webkit-transform 0.3s 0.1s ease-out, opacity 0.1s 0.3s, background-color 0.1s 0.3s;
+          transition: transform 0.3s 0.1s ease-out, opacity 0.1s 0.3s, background-color 0.1s 0.3s;
+  -webkit-transform: scale(30);
+      -ms-transform: scale(30);
+          transform: scale(30);
+  opacity: 0.9;
+}
+.login_submit.success:after {
+  -webkit-transition: opacity 0.1s 0s;
+          transition: opacity 0.1s 0s;
+  opacity: 0;
+}
+.login_signup {
+  font-size: 13px;
+  color: #ABA8AE;
+}
+.login_signup a {
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.app {
+  position: absolute;
+  width: 30rem;
+  height: 53rem;
+  top: 3px;
+  left: 0;
+  opacity: 0;
+  display: none;
+  overflow: hidden;
+  -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+          transition: opacity 0.1s, transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.app.active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.app.active .app__user-photo {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.app.active .app__meeting {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+.app.active .app__logout {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.app__top {
+  position: relative;
+  height: 22rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem 1.5rem 0rem;
+  text-align: center;
+}
+.app__bot {
+  position: relative;
+  height: 30rem;
+  background: #fff;
+  overflow: auto;
+}
+.app__menu-btn {
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+  width: 1.8rem;
+  height: 1.7rem;
+  cursor: pointer;
+}
+.app__menu-btn span, .app__menu-btn:before, .app__menu-btn:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.app__menu-btn span {
+  top: 0.8rem;
+}
+.app__menu-btn:before {
+  content: "";
+  top: 0;
+}
+.app__menu-btn:after {
+  content: "";
+  bottom: 0;
+}
+.app__icon {
+  position: absolute;
+  top: 2rem;
+}
+.app__icon.search {
+  right: 1.5rem;
+  stroke-dasharray: 61.847137451171875;
+  stroke-dashoffset: 61.847137451171875;
+  -webkit-animation: animatePath 0.5s 0.5s forwards;
+          animation: animatePath 0.5s 0.5s forwards;
+}
+.app__hello {
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 3rem;
+}
+.app__user {
+  position: relative;
+  display: inline-block;
+  width: 9rem;
+  height: 9rem;
+  margin-bottom: 3rem;
+}
+.app__user-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.3s 0.2s cubic-bezier(0.62, 0.35, 0.56, 1.55);
+          transition: transform 0.3s 0.2s cubic-bezier(0.62, 0.35, 0.56, 1.55);
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+.app__user-notif {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  line-height: 3rem;
+  text-align: center;
+  background: #50D2C2;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.app__month:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.app__month-name {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.app__month-btn {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-left: none;
+  border-bottom: none;
+  cursor: pointer;
+}
+.app__month-btn.left {
+  float: left;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+.app__month-btn.right {
+  float: right;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.app__days {
+  height: 7rem;
+  padding: 1.5rem 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.app__day {
+  width: 14%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.app__day.weekday {
+  color: #919197;
+  text-transform: uppercase;
+}
+.app__day.date {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3C3C43;
+}
+.app__meeting {
+  position: relative;
+  height: 6rem;
+  border-top: 1px solid #EEEEEF;
+  padding: 1rem 2rem 1rem 7.5rem;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+          transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+}
+.app__meeting:nth-child(1) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+.app__meeting:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.app__meeting:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+.app__meeting:nth-child(4) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+.app__meeting:nth-child(5) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+.app__meeting-photo {
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+  width: 4rem;
+  height: 4rem;
+}
+.app__meeting-name {
+  color: #000;
+  font-size: 1.3rem;
+}
+.app__meeting-info {
+  color: #949498;
+  font-size: 1.1rem;
+}
+.app__logout {
+  position: absolute;
+  top: 0.5rem;
+  right: 3.3rem;
+  width: 4.6rem;
+  height: 4.6rem;
+  margin-right: -2.3rem;
+  margin-bottom: -2.3rem;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: bottom 0.4s 0.1s, right 0.4s 0.1s, -webkit-transform 0.4s 0.4s, opacity 0.1s 0.7s, background-color 0.1s 0.7s;
+          transition: bottom 0.4s 0.1s, right 0.4s 0.1s, transform 0.4s 0.4s, opacity 0.1s 0.7s, background-color 0.1s 0.7s;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+.app__logout.clicked {
+  bottom: 50%;
+  right: 50%;
+  -webkit-transform: scale(30) !important;
+      -ms-transform: scale(30) !important;
+          transform: scale(30) !important;
+  opacity: 0.9;
+}
+.app__logout.clicked svg {
+  opacity: 0;
+}
+.app__logout-icon {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 50%;
+  left: 50%;
+  margin-left: -1.5rem;
+  margin-top: -1.5rem;
+  -webkit-transition: opacity 0.1s;
+          transition: opacity 0.1s;
+}
+.app__logout-icon path {
+  stroke-width: 4px;
+  stroke-dasharray: 64.36235046386719;
+  stroke-dashoffset: 64.36235046386719;
+  -webkit-animation: animatePath 0.5s 0.5s forwards;
+          animation: animatePath 0.5s 0.5s forwards;
+}
+
+.ripple {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  margin-left: -7.5rem;
+  margin-top: -7.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: animRipple 0.4s;
+          animation: animRipple 0.4s;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes animRipple {
+  to {
+    -webkit-transform: scale(3.5);
+            transform: scale(3.5);
+    opacity: 0;
+  }
+}
+
+@keyframes animRipple {
+  to {
+    -webkit-transform: scale(3.5);
+            transform: scale(3.5);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes animatePath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animatePath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.card-holder {
+  position: fixed;
+  width: 0px;
+  right: 0;
+  overflow: visible;
+}
+
+.card-wrapper {
+  display: inline-block;
+  float: left;
+  clear: both;
+}
+
+.card {
+  position: relative;
+  left: -32px;
+  padding: 16px 64px 16px 16px;
+  margin: 8px;
+  x-box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 8px 0 8px -8px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.card:hover {
+  position: relative;
+  right: 100%;
+  margin-left: -48px;
+  box-shadow:
+    0 -8px 8px -8px rgba(0, 0, 0, 0.5),
+    0 8px 8px -8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-content {
+  display: inline-block;
+  color: #fff;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.bg-01 { background: #FF0000; }
+.bg-02 { background: #FF7F00; }
+.bg-03 { background: #FFFF00; }
+.bg-04 { background: #00FF00; }
+.bg-05 { background: #00FFFF; }
+.bg-06 { background: #0000FF; }
+.bg-07 { background: #8B00FF; }
+
+
+
+@-webkit-keyframes shake-slow{0%{-webkit-transform:translate(0,0) rotate(0)}2%{-webkit-transform:translate(-1px,3px) rotate(-1.5deg)}4%{-webkit-transform:translate(-4px,5px) rotate(-1.5deg)}6%{-webkit-transform:translate(-1px,6px) rotate(-.5deg)}8%{-webkit-transform:translate(5px,-4px) rotate(-3.5deg)}10%{-webkit-transform:translate(-7px,-3px) rotate(-3.5deg)}12%{-webkit-transform:translate(-1px,8px) rotate(2.5deg)}14%{-webkit-transform:translate(3px,-5px) rotate(-1.5deg)}16%{-webkit-transform:translate(1px,0) rotate(2.5deg)}18%{-webkit-transform:translate(-6px,-10px) rotate(-.5deg)}20%{-webkit-transform:translate(3px,-2px) rotate(1.5deg)}22%{-webkit-transform:translate(0,0) rotate(-2.5deg)}24%{-webkit-transform:translate(-5px,-4px) rotate(1.5deg)}26%{-webkit-transform:translate(-1px,3px) rotate(-3.5deg)}28%{-webkit-transform:translate(1px,1px) rotate(-3.5deg)}30%{-webkit-transform:translate(-4px,8px) rotate(1.5deg)}32%{-webkit-transform:translate(-9px,7px) rotate(-3.5deg)}34%{-webkit-transform:translate(4px,-9px) rotate(-2.5deg)}36%{-webkit-transform:translate(1px,-6px) rotate(-2.5deg)}38%{-webkit-transform:translate(-4px,0) rotate(-2.5deg)}40%{-webkit-transform:translate(3px,-7px) rotate(.5deg)}42%{-webkit-transform:translate(4px,4px) rotate(-.5deg)}44%{-webkit-transform:translate(8px,-4px) rotate(-2.5deg)}46%{-webkit-transform:translate(9px,9px) rotate(-3.5deg)}48%{-webkit-transform:translate(6px,-8px) rotate(-.5deg)}50%{-webkit-transform:translate(-1px,4px) rotate(-3.5deg)}52%{-webkit-transform:translate(4px,6px) rotate(-1.5deg)}54%{-webkit-transform:translate(9px,-3px) rotate(2.5deg)}56%{-webkit-transform:translate(8px,-2px) rotate(-3.5deg)}58%{-webkit-transform:translate(-2px,-9px) rotate(-.5deg)}60%{-webkit-transform:translate(-1px,-5px) rotate(2.5deg)}62%{-webkit-transform:translate(-8px,3px) rotate(2.5deg)}64%{-webkit-transform:translate(6px,-2px) rotate(-3.5deg)}66%{-webkit-transform:translate(-5px,9px) rotate(-1.5deg)}68%{-webkit-transform:translate(3px,1px) rotate(-.5deg)}70%{-webkit-transform:translate(6px,4px) rotate(-1.5deg)}72%{-webkit-transform:translate(-6px,-5px) rotate(1.5deg)}74%{-webkit-transform:translate(-8px,0) rotate(-.5deg)}76%{-webkit-transform:translate(-5px,-8px) rotate(1.5deg)}78%{-webkit-transform:translate(5px,-3px) rotate(-1.5deg)}80%{-webkit-transform:translate(-6px,-3px) rotate(-1.5deg)}82%{-webkit-transform:translate(7px,8px) rotate(-1.5deg)}84%{-webkit-transform:translate(-6px,9px) rotate(.5deg)}86%{-webkit-transform:translate(1px,8px) rotate(-3.5deg)}88%{-webkit-transform:translate(-9px,-2px) rotate(1.5deg)}90%{-webkit-transform:translate(4px,-6px) rotate(-1.5deg)}92%{-webkit-transform:translate(0,-1px) rotate(.5deg)}94%{-webkit-transform:translate(2px,-9px) rotate(2.5deg)}96%{-webkit-transform:translate(-9px,1px) rotate(-2.5deg)}98%{-webkit-transform:translate(-9px,-5px) rotate(-3.5deg)}}
+
+@keyframes shake-slow{0%{-webkit-transform:translate(0,0) rotate(0)}2%{-webkit-transform:translate(-1px,3px) rotate(-1.5deg)}4%{-webkit-transform:translate(-4px,5px) rotate(-1.5deg)}6%{-webkit-transform:translate(-1px,6px) rotate(-.5deg)}8%{-webkit-transform:translate(5px,-4px) rotate(-3.5deg)}10%{-webkit-transform:translate(-7px,-3px) rotate(-3.5deg)}12%{-webkit-transform:translate(-1px,8px) rotate(2.5deg)}14%{-webkit-transform:translate(3px,-5px) rotate(-1.5deg)}16%{-webkit-transform:translate(1px,0) rotate(2.5deg)}18%{-webkit-transform:translate(-6px,-10px) rotate(-.5deg)}20%{-webkit-transform:translate(3px,-2px) rotate(1.5deg)}22%{-webkit-transform:translate(0,0) rotate(-2.5deg)}24%{-webkit-transform:translate(-5px,-4px) rotate(1.5deg)}26%{-webkit-transform:translate(-1px,3px) rotate(-3.5deg)}28%{-webkit-transform:translate(1px,1px) rotate(-3.5deg)}30%{-webkit-transform:translate(-4px,8px) rotate(1.5deg)}32%{-webkit-transform:translate(-9px,7px) rotate(-3.5deg)}34%{-webkit-transform:translate(4px,-9px) rotate(-2.5deg)}36%{-webkit-transform:translate(1px,-6px) rotate(-2.5deg)}38%{-webkit-transform:translate(-4px,0) rotate(-2.5deg)}40%{-webkit-transform:translate(3px,-7px) rotate(.5deg)}42%{-webkit-transform:translate(4px,4px) rotate(-.5deg)}44%{-webkit-transform:translate(8px,-4px) rotate(-2.5deg)}46%{-webkit-transform:translate(9px,9px) rotate(-3.5deg)}48%{-webkit-transform:translate(6px,-8px) rotate(-.5deg)}50%{-webkit-transform:translate(-1px,4px) rotate(-3.5deg)}52%{-webkit-transform:translate(4px,6px) rotate(-1.5deg)}54%{-webkit-transform:translate(9px,-3px) rotate(2.5deg)}56%{-webkit-transform:translate(8px,-2px) rotate(-3.5deg)}58%{-webkit-transform:translate(-2px,-9px) rotate(-.5deg)}60%{-webkit-transform:translate(-1px,-5px) rotate(2.5deg)}62%{-webkit-transform:translate(-8px,3px) rotate(2.5deg)}64%{-webkit-transform:translate(6px,-2px) rotate(-3.5deg)}66%{-webkit-transform:translate(-5px,9px) rotate(-1.5deg)}68%{-webkit-transform:translate(3px,1px) rotate(-.5deg)}70%{-webkit-transform:translate(6px,4px) rotate(-1.5deg)}72%{-webkit-transform:translate(-6px,-5px) rotate(1.5deg)}74%{-webkit-transform:translate(-8px,0) rotate(-.5deg)}76%{-webkit-transform:translate(-5px,-8px) rotate(1.5deg)}78%{-webkit-transform:translate(5px,-3px) rotate(-1.5deg)}80%{-webkit-transform:translate(-6px,-3px) rotate(-1.5deg)}82%{-webkit-transform:translate(7px,8px) rotate(-1.5deg)}84%{-webkit-transform:translate(-6px,9px) rotate(.5deg)}86%{-webkit-transform:translate(1px,8px) rotate(-3.5deg)}88%{-webkit-transform:translate(-9px,-2px) rotate(1.5deg)}90%{-webkit-transform:translate(4px,-6px) rotate(-1.5deg)}92%{-webkit-transform:translate(0,-1px) rotate(.5deg)}94%{-webkit-transform:translate(2px,-9px) rotate(2.5deg)}96%{-webkit-transform:translate(-9px,1px) rotate(-2.5deg)}98%{-webkit-transform:translate(-9px,-5px) rotate(-3.5deg)}}

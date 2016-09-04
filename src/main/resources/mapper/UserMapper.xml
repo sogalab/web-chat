@@ -8,6 +8,8 @@
 		<result property="password" column="password" />
 	</resultMap>
 	
-	
+	<select id="getByName" parameterType="String" resultMap="UserMap">
+		select * from user where name = #{name}
+	</select>
 	
 </mapper>

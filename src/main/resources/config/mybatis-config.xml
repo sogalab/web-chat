@@ -5,7 +5,7 @@
 <configuration>
 	<!-- 为实体类起别名 -->
 	<typeAliases>
-		<typeAlias alias="User" type="com.fanyl.ws.bean.AbstractUser" />
+		<typeAlias alias="User" type="com.fanyl.ws.bean.User" />
 	</typeAliases>
 	<environments default="DevelopProjectMana">
 		<environment id="DevelopProjectMana">
