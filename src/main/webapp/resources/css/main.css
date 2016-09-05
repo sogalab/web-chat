@@ -185,12 +185,11 @@ input, button {
 
 .app {
   position: absolute;
-  width: 30rem;
-  height: 53rem;
+  width: 365px;
+  height: 635px;
   top: 3px;
   left: 0;
   opacity: 0;
-  display: none;
   overflow: hidden;
   -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
           transition: opacity 0.1s, transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
@@ -204,32 +203,32 @@ input, button {
       -ms-transform: scale(1);
           transform: scale(1);
 }
-.app.active .app__user-photo {
+.app.active .app_user-photo {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
 }
-.app.active .app__meeting {
+.app.active .app_meeting {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
 }
-.app.active .app__logout {
+.app.active .app_logout {
   -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
           transform: scale(0.8);
 }
-.app__top {
+.app_top {
   position: relative;
-  height: 22rem;
+  height: 195px;
   background: rgba(0, 0, 0, 0.5);
-  padding: 2rem 1.5rem 0rem;
+  padding: 25px 20px 0px;
   text-align: center;
 }
-.app__bot {
+.app_bot {
   position: relative;
-  height: 30rem;
+  height: 445px;
   background: #fff;
   overflow: auto;
 }

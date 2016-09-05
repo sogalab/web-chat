@@ -382,13 +382,13 @@
 	
 	<script>
 		var path = '<%=basePath%>';
-		var uid=${uid eq null?-1:uid};
+		var uid='${uid eq null?-1:uid}';
 		if(uid==-1){
 			location.href="<%=basePath2%>";
 		}
 		var from=uid;
 		var fromName='${name}';
-		var to = uid == 1?2:1;
+		var to = uid == "1"?"2":"1";
 		
 		var websocket;
 		
@@ -476,6 +476,7 @@
 		function clearAll(){
 			$("#content").empty();
 		}
+		scrollToBottom();
 	</script>
 	
 	<audio id="music">
