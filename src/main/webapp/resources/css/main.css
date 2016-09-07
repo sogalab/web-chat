@@ -461,6 +461,53 @@ input, button {
           animation: animatePath 0.5s 0.5s forwards;
 }
 
+.session {
+  left:32rem;
+  width:15rem;
+  border-right:1px solid #999;
+  height:52rem;
+  display: block;
+  position: absolute;
+  top: 3px;
+  opacity: 1;
+  overflow: hidden;
+  -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+          transition: opacity 0.1s, transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  animation: shake-slow 5s ease-in-out;
+}
+.session_top {
+  height:52rem;
+  padding:1rem;
+  overflow:auto;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.session_hello {
+  padding:15px 10px;
+  border:1px solid #fff;
+  border-radius:8px;
+  font-size:1rem;
+  margin-bottom:5px;
+  text-align:left;
+  background:rgba(0, 0, 0, 0.5);
+  opacity:0.8;
+  color: #fff;
+  font-weight: normal;
+}
+.session_hello span{
+	position: absolute;
+	right: 25px;
+	background: #999;
+	border-radius: 100%;
+	width: 14px;
+	text-align: center;
+}
+
+
 .ripple {
   position: absolute;
   width: 15rem;
@@ -474,6 +521,185 @@ input, button {
   -webkit-animation: animRipple 0.4s;
           animation: animRipple 0.4s;
   border-radius: 50%;
+}
+
+.chat {
+  left:47rem;
+  width:58rem;
+  display: block;
+  height:52rem;
+  position: absolute;
+  top: 3px;
+  opacity: 1;
+  overflow: hidden;
+  -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+          transition: opacity 0.1s, transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  animation: shake-slow 5s ease-in-out;
+}
+
+.chat_top {
+  padding:2rem 1.5rem;
+  height:35rem;
+  border:1px solid #fff;
+  overflow:auto;
+  border-radius:8px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.chat_bot {
+  height:6rem;
+  position: relative;
+  background: #fff;
+  overflow: auto;
+}
+
+.chat_meeting {
+  position: relative;
+  height: 6rem;
+  border-top: 1px solid #EEEEEF;
+  padding: 1rem 2rem 1rem 7.5rem;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+          transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+}
+.chat_meeting:nth-child(1) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+.chat_meeting:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.chat_meeting:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+.chat_meeting:nth-child(4) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+.chat_meeting:nth-child(5) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+.chat_meeting-photo {
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+  width: 4rem;
+  height: 4rem;
+}
+.chat_meeting-name {
+  color: #000;
+  font-size: 1.3rem;
+}
+.chat_meeting-info {
+  color: #949498;
+  font-size: 1.1rem;
+}
+.notice{
+  position: absolute;
+  right: 0;
+  top:2rem;
+  width: 70%;
+  overflow: hidden;
+  height: 27px;
+  color: orangered;
+}
+
+.chatbox_left{
+	float:left;
+	position: relative;
+	margin-bottom: 10px;
+}
+.chatbox_left .d1{
+	text-align:left;
+}
+.chatbox_left .d1 .name{
+	font-weight:900;
+	color:#fff;
+}
+.chatbox_left .d1 .time{
+	color:#d2d2d2;
+}
+.chatbox_left .d2{
+	max-width:520px;
+	margin-top: 5px;
+	padding: 10px;
+	word-wrap: break-word;
+	border-radius: 5px;
+	background-color: #cfffcf;
+	float: left;
+	margin-left:4rem;
+}
+.chatbox_left .d2 .img{
+	width:2.5rem;
+	height:2.5rem;
+	top: 2rem;
+	left: 0;
+	position: absolute;
+	border-radius: 100%;
+}
+.chatbox_left .d2 .corner{
+	left:3.6rem;
+	border-right: 5px solid #cfffcf;
+	position: absolute;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+.chatbox_left .d2 .content{
+	text-align:left;
+}
+
+.chatbox_right{
+	float:right;
+	position: relative;
+	margin-bottom: 10px;
+}
+.chatbox_right .d1{
+	text-align:right;
+}
+.chatbox_right .d1 .name{
+	font-weight:900;
+	color:#fff;
+}
+.chatbox_right .d1 .time{
+	color:#d2d2d2;
+}
+.chatbox_right .d2{
+	max-width:520px;
+	margin-top: 5px;
+	padding: 10px;
+	word-wrap: break-word;
+	border-radius: 5px;
+	background-color: #ffe6b8;
+	float: right;
+	margin-right:4rem;
+}
+.chatbox_right .d2 .img{
+	width:2.5rem;
+	height:2.5rem;
+	top: 2rem;
+	left: 0;
+	position: absolute;
+	border-radius: 100%;
+}
+.chatbox_right .d2 .corner{
+	right:3.6rem;
+	border-left: 5px solid #ffe6b8;
+	position: absolute;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+.chatbox_right .d2 .content{
+	text-align:left;
 }
 
 @-webkit-keyframes animRipple {

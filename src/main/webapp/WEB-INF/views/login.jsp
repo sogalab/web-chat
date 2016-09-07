@@ -154,11 +154,11 @@
 		</div>
 
 
-	    <div class="app active" style="left:32rem;width:15rem;border-right:1px solid #999;height:52rem;display: block;animation: shake-slow 5s ease-in-out;">
-	      <div class="app__top" style="height:52rem;padding:1rem;overflow:auto;">
-	        <p class="app__hello" style="padding:15px 10px;border:1px solid #fff;border-radius:8px;font-size:1rem;margin-bottom:5px;text-align:left;background:rgba(0, 0, 0, 0.5);opacity:0.8;">
+	    <div class="session" >
+	      <div class="session_top" >
+	        <p class="session_hello" >
 	        管理员
-			<span style="position: absolute;right: 25px;background: #999;border-radius: 100%;width: 14px;text-align: center;">X</span>
+			<span>X</span>
 	        </p>
 	      </div>
 	    </div>
@@ -167,14 +167,14 @@
 
 	    <div class="app active" style="left:47rem;width:58rem;display: block;height:52rem;animation: shake-slow 5s ease-in-out;">
 	      <div class="app__bot" style="height:6rem;">
-	        <div class="app__meetings">
+	        <div class="">
 	          <div class="app__meeting">
 	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
 	            <p class="app__meeting-name">Feed the cat</p>
 	            <br />
 	            <p class="app__meeting-info">
-	              <span class="app__meeting-time">8 - 10am</span>
-	              <span class="app__meeting-place">Real-life</span>
+	              <span class="">8 - 10am</span>
+	              <span class="">Real-life</span>
 	            </p>
 	            <div class="notice" style="position: absolute;right: 0;top:2rem;width: 70%;overflow: hidden;height: 27px;color: orangered;">
                     <marquee direction="left">目前只有聊天功能呢，以后会陆续开发私聊，图片，在线时间，对方正在打字，互动游戏等功能。。尽请期待！</marquee>
@@ -184,15 +184,15 @@
 	      </div>
 	      <div id="content" class="app__top" style="padding:2rem 1.5rem;height:35rem;border:1px solid #fff;overflow:auto;border-radius:8px;">
 			<div class="chatbox" style="float:left;position: relative;margin-bottom: 10px;">
-				<div style="text-align:left">
-					<span style="font-weight:900;color:#fff">管理员</span>
+				<div class="d1" style="text-align:left">
+					<span class="name" style="font-weight:900;color:#fff">管理员</span>
 					&nbsp;&nbsp;
-					<span style="color:#d2d2d2;">21:37:36</span>
+					<span class="time" style="color:#d2d2d2;">21:37:36</span>
 				</div>
-				<div id="b10ea85f21_37_36" class="chat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #cfffcf;float: left;margin-left:4rem;">
-					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;left: 0;position: absolute;border-radius: 100%;">
-					<div class="" style="left:3.6rem;border-right: 5px solid #cfffcf;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
-					<div style="text-align:left;">
+				<div class="d2" id="b10ea85f21_37_36" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #cfffcf;float: left;margin-left:4rem;">
+					<img class="img" src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;left: 0;position: absolute;border-radius: 100%;">
+					<div class="corner" style="left:3.6rem;border-right: 5px solid #cfffcf;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
+					<div class="content" style="text-align:left;">
 						......1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
 					</div>
 				</div>
@@ -204,15 +204,15 @@
 				管理员上线了
 			</div>
 			<div class="chatbox" style="float:right;position: relative;margin-bottom: 10px;">
-				<div style="text-align:right">
-					<span style="color:#d2d2d2;">23:19:29</span>
+				<div class="d1" style="text-align:right">
+					<span class="time" style="color:#d2d2d2;">23:19:29</span>
 					&nbsp;&nbsp;
-					<span style="font-weight:900;color:#fff">我</span>
+					<span class="name" style="font-weight:900;color:#fff">我</span>
 				</div>
-				<div id="a2dea84723_19_29" class="chat selfchat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
-					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
-					<div class="" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
-					<div style="text-align:left;">
+				<div class="d2" id="a2dea84723_19_29" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
+					<img class="img" src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
+					<div class="corner" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
+					<div class="content" style="text-align:left;">
 						ABC<br>
 						ABC<br>
 						ABC<br>
