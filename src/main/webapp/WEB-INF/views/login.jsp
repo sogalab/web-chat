@@ -14,6 +14,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="/webchat/resources/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="/webchat/resources/css/main.css">
 </head>
 <body>
 	<div class="cont">
@@ -165,34 +166,34 @@
 
 
 
-	    <div class="app active" style="left:47rem;width:58rem;display: block;height:52rem;animation: shake-slow 5s ease-in-out;">
-	      <div class="app__bot" style="height:6rem;">
+	    <div class="chat" >
+	      <div class="chat_bot">
 	        <div class="">
-	          <div class="app__meeting">
-	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
-	            <p class="app__meeting-name">Feed the cat</p>
+	          <div class="chat_meeting">
+	            <img src="/webchat/resources/images/head.png" alt="" class="chat_meeting-photo" />
+	            <p class="chat_meeting-name">Feed the cat</p>
 	            <br />
-	            <p class="app__meeting-info">
+	            <p class="chat_meeting-info">
 	              <span class="">8 - 10am</span>
 	              <span class="">Real-life</span>
 	            </p>
-	            <div class="notice" style="position: absolute;right: 0;top:2rem;width: 70%;overflow: hidden;height: 27px;color: orangered;">
+	            <div class="notice" >
                     <marquee direction="left">目前只有聊天功能呢，以后会陆续开发私聊，图片，在线时间，对方正在打字，互动游戏等功能。。尽请期待！</marquee>
                 </div>
 	          </div>
 	      	</div>
 	      </div>
-	      <div id="content" class="app__top" style="padding:2rem 1.5rem;height:35rem;border:1px solid #fff;overflow:auto;border-radius:8px;">
-			<div class="chatbox" style="float:left;position: relative;margin-bottom: 10px;">
-				<div class="d1" style="text-align:left">
-					<span class="name" style="font-weight:900;color:#fff">管理员</span>
+	      <div id="content" class="chat_top" >
+			<div class="chatbox_left">
+				<div class="d1">
+					<span class="name">管理员</span>
 					&nbsp;&nbsp;
-					<span class="time" style="color:#d2d2d2;">21:37:36</span>
+					<span class="time">21:37:36</span>
 				</div>
-				<div class="d2" id="b10ea85f21_37_36" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #cfffcf;float: left;margin-left:4rem;">
-					<img class="img" src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;left: 0;position: absolute;border-radius: 100%;">
-					<div class="corner" style="left:3.6rem;border-right: 5px solid #cfffcf;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
-					<div class="content" style="text-align:left;">
+				<div class="d2" >
+					<img class="img" src="/webchat/resources/images/head.png" alt="" >
+					<div class="corner" ></div>
+					<div class="content" >
 						......1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
 					</div>
 				</div>
@@ -203,16 +204,16 @@
 				<span class="message-music" style="width: 10px;height: 10px;background: url(http://zb.666001.cc/images/icon.png) -68px -22px no-repeat;display:inline-block;margin-top:2px;"></span>
 				管理员上线了
 			</div>
-			<div class="chatbox" style="float:right;position: relative;margin-bottom: 10px;">
-				<div class="d1" style="text-align:right">
-					<span class="time" style="color:#d2d2d2;">23:19:29</span>
+			<div class="chatbox_right">
+				<div class="d1" >
+					<span class="time" >23:19:29</span>
 					&nbsp;&nbsp;
-					<span class="name" style="font-weight:900;color:#fff">我</span>
+					<span class="name" >我</span>
 				</div>
-				<div class="d2" id="a2dea84723_19_29" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
-					<img class="img" src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
-					<div class="corner" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
-					<div class="content" style="text-align:left;">
+				<div class="d2" >
+					<img class="img" src="/webchat/resources/images/head.png" alt="" >
+					<div class="corner" ></div>
+					<div class="content" >
 						ABC<br>
 						ABC<br>
 						ABC<br>
@@ -222,85 +223,6 @@
 				</div>
 			</div>
 			<div class="clearboth" style="clear: both;"></div>
-
-
-			<div class="chatbox" style="float:right;position: relative;margin-bottom: 10px;">
-				<div style="text-align:right">
-					<span style="color:#d2d2d2;">23:19:29</span>
-					&nbsp;&nbsp;
-					<span style="font-weight:900;color:#fff">我</span>
-				</div>
-				<div id="a2dea84723_19_29" class="chat selfchat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
-					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
-					<div class="" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
-					<div style="text-align:left;">
-						ABC
-					</div>
-				</div>
-			</div>
-			<div class="clearboth" style="clear: both;"></div>
-			<div class="chatbox" style="float:right;position: relative;margin-bottom: 10px;">
-				<div style="text-align:right">
-					<span style="color:#d2d2d2;">23:19:29</span>
-					&nbsp;&nbsp;
-					<span style="font-weight:900;color:#fff">我</span>
-				</div>
-				<div id="a2dea84723_19_29" class="chat selfchat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
-					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
-					<div class="" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
-					<div style="text-align:left;">
-						ABC
-					</div>
-				</div>
-			</div>
-			<div class="clearboth" style="clear: both;"></div>
-			<div class="chatbox" style="float:right;position: relative;margin-bottom: 10px;">
-				<div style="text-align:right">
-					<span style="color:#d2d2d2;">23:19:29</span>
-					&nbsp;&nbsp;
-					<span style="font-weight:900;color:#fff">我</span>
-				</div>
-				<div id="a2dea84723_19_29" class="chat selfchat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
-					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
-					<div class="" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
-					<div style="text-align:left;">
-						<img src="http://img.blog.csdn.net/20160811175949152" title="使用FullCalendar做一个自己的日程管理（三）- 持久化篇" style="max-width:480px;">
-					</div>
-				</div>
-			</div>
-			<div class="clearboth" style="clear: both;"></div>
-			<div class="chatbox" style="float:right;position: relative;margin-bottom: 10px;">
-				<div style="text-align:right">
-					<span style="color:#d2d2d2;">23:19:29</span>
-					&nbsp;&nbsp;
-					<span style="font-weight:900;color:#fff">我</span>
-				</div>
-				<div id="a2dea84723_19_29" class="chat selfchat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
-					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
-					<div class="" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
-					<div style="text-align:left;">
-						ABC
-					</div>
-				</div>
-			</div>
-			<div class="clearboth" style="clear: both;"></div>
-			<div class="chatbox" style="float:right;position: relative;margin-bottom: 10px;">
-				<div style="text-align:right">
-					<span style="color:#d2d2d2;">23:19:29</span>
-					&nbsp;&nbsp;
-					<span style="font-weight:900;color:#fff">我</span>
-				</div>
-				<div id="a2dea84723_19_29" class="chat selfchat" style="max-width:520px;margin-top: 5px;padding: 10px;word-wrap: break-word;border-radius: 5px;background-color: #ffe6b8;float: right;margin-right:4rem;">
-					<img src="/webchat/resources/images/head.png" alt="" style="width:2.5rem;height:2.5rem;top: 2rem;right: 0;position: absolute;border-radius: 100%;">
-					<div class="" style="right:3.6rem;border-left: 5px solid #ffe6b8;position: absolute;border-top: 5px solid transparent;border-bottom: 5px solid transparent;"></div>
-					<div style="text-align:left;">
-						<img src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/5c/huanglianwx_thumb.gif"  style="max-width:480px;">
-					</div>
-				</div>
-			</div>
-			<div class="clearboth" style="clear: both;"></div>
-
-
 	      </div>
 		  <div class="app__bot" style="height:3rem;background:rgba(0, 0, 0, 0.5);">
 		  	<a class="emoji" style="width:25px;float:left;margin:5px 0 0 5px;" data-toggle="popover" data-placement="top" title="表情"><img style="width:100%;" class="img_emoji" src="http://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/5c/huanglianwx_thumb.gif"></a>
