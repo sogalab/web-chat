@@ -189,44 +189,38 @@ input, button {
   height: 635px;
   top: 3px;
   left: 0;
-  opacity: 0;
+  opacity: 1;
   overflow: hidden;
   -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
           transition: opacity 0.1s, transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.app.active {
-  opacity: 1;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
 }
-.app.active .app_user-photo {
+.app .app_user-photo {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
 }
-.app.active .app_meeting {
+.app .app_meeting {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
 }
-.app.active .app_logout {
+.app .app_logout {
   -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
           transform: scale(0.8);
 }
-.app_top {
+.app__top {
   position: relative;
   height: 195px;
   background: rgba(0, 0, 0, 0.5);
   padding: 25px 20px 0px;
   text-align: center;
 }
-.app_bot {
+.app__bot {
   position: relative;
   height: 445px;
   background: #fff;
@@ -564,10 +558,6 @@ input, button {
   padding: 1rem 2rem 1rem 7.5rem;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
           transition: transform 0.3s, opacity 0.3s;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  opacity: 0;
 }
 .chat_meeting:nth-child(1) {
   -webkit-transition-delay: 0.2s;

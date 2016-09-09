@@ -13,13 +13,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="/webchat/resources/css/styles.css">
 	<link rel="stylesheet" type="text/css" href="/webchat/resources/css/main.css">
 </head>
 <body>
-	<div class="cont">
+	<div class="bg">
 
-	    <div class="app active" style="display: block;">
+	    <div class="app">
 	      <div class="app__top" style="height:16rem;">
 	        <div class="app__menu-btn">
 	          <span></span>
@@ -102,7 +101,7 @@
 	    </div>
 
 
-		<div class='card-holder active' style="display: block;">
+		<div class='card-holder' style="display: block;">
 		  <div class='card-wrapper'>
 		    <a href='#'>
 		      <div class='card bg-01'>
@@ -240,45 +239,11 @@
 	
 	<script>
 		$(document).ready(function () {
-		    var animating = false, submitPhase1 = 1100, submitPhase2 = 400, logoutPhase1 = 800, $login = $('.login'), $app = $('.app');
-		    function ripple(elem, e) {
-		        $('.ripple').remove();
-		        var elTop = elem.offset().top, elLeft = elem.offset().left, x = e.pageX - elLeft, y = e.pageY - elTop;
-		        var $ripple = $('<div class=\'ripple\'></div>');
-		        $ripple.css({
-		            top: y,
-		            left: x
-		        });
-		        elem.append($ripple);
-		    }
-		    
-		    $(document).on('click', '.login__submit', function (e) {
-		        if (animating)
-		            return;
-		        animating = true;
-		        var that = this;
-		        ripple($(that), e);
-		        $(that).addClass('processing');
-		        setTimeout(function () {
-		            $(that).addClass('success');
-		            setTimeout(function () {
-		                $app.show();
-		                $app.css('top');
-		                $app.addClass('active');
-		            }, submitPhase2 - 70);
-		            setTimeout(function () {
-		                $login.hide();
-		                $login.addClass('inactive');
-		                animating = false;
-		                $(that).removeClass('success processing');
-		            }, submitPhase2);
-		        }, submitPhase1);
-		    });
+		    var animating = false, logoutPhase1 = 800, $login = $('.login'), $app = $('.app');
 	
 		    $(document).on('click', '.app__logout', function (e) {
 		        if (animating)
 		            return;
-		        $('.ripple').remove();
 		        animating = true;
 		        var that = this;
 		        $(that).addClass('clicked');

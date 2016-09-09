@@ -187,33 +187,27 @@ input, button {
   height: 53rem;
   top: 3px;
   left: 0;
-  opacity: 0;
-  display: none;
+  opacity: 1;
   overflow: hidden;
   -webkit-transition: opacity 0.1s, -webkit-transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
           transition: opacity 0.1s, transform 0.3s cubic-bezier(0.68, -0.45, 0.465, 1.25);
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.app.active {
-  opacity: 1;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
 }
-.app.active .app__user-photo {
+
+.app .app__user-photo {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
 }
-.app.active .app__meeting {
+.app .app__meeting {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
 }
-.app.active .app__logout {
+.app .app__logout {
   -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
           transform: scale(0.8);
