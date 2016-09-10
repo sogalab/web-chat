@@ -23,7 +23,7 @@ svg {
   overflow: visible;
 }
 
-.svg-icon {
+.svg_icon {
   cursor: pointer;
 }
 
@@ -213,20 +213,20 @@ input, button {
       -ms-transform: scale(0.8);
           transform: scale(0.8);
 }
-.app__top {
+.app_top {
   position: relative;
   height: 195px;
   background: rgba(0, 0, 0, 0.5);
   padding: 25px 20px 0px;
   text-align: center;
 }
-.app__bot {
+.app_bot {
   position: relative;
   height: 445px;
   background: #fff;
   overflow: auto;
 }
-.app__menu-btn {
+.app_menu-btn {
   position: absolute;
   top: 2rem;
   left: 1.5rem;
@@ -234,49 +234,38 @@ input, button {
   height: 1.7rem;
   cursor: pointer;
 }
-.app__menu-btn span, .app__menu-btn:before, .app__menu-btn:after {
+.app_menu-btn span, .app_menu-btn:before, .app_menu-btn:after {
   position: absolute;
   left: 0;
   width: 100%;
   height: 1px;
   background: rgba(255, 255, 255, 0.6);
 }
-.app__menu-btn span {
+.app_menu-btn span {
   top: 0.8rem;
 }
-.app__menu-btn:before {
+.app_menu-btn:before {
   content: "";
   top: 0;
 }
-.app__menu-btn:after {
+.app_menu-btn:after {
   content: "";
   bottom: 0;
 }
-.app__icon {
-  position: absolute;
-  top: 2rem;
-}
-.app__icon.search {
-  right: 1.5rem;
-  stroke-dasharray: 61.847137451171875;
-  stroke-dashoffset: 61.847137451171875;
-  -webkit-animation: animatePath 0.5s 0.5s forwards;
-          animation: animatePath 0.5s 0.5s forwards;
-}
-.app__hello {
+.app_hello {
   font-size: 2.2rem;
   color: #fff;
   font-weight: normal;
   margin-bottom: 3rem;
 }
-.app__user {
+.app_user {
   position: relative;
   display: inline-block;
   width: 9rem;
   height: 9rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
 }
-.app__user-photo {
+.app_user-photo {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -285,82 +274,10 @@ input, button {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
+  border-color:#fff6d9;border:3px solid transparent;
 }
-.app__user-notif {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  line-height: 3rem;
-  text-align: center;
-  background: #50D2C2;
-  color: #fff;
-  font-size: 1.5rem;
-}
-.app__month:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.app__month-name {
-  display: inline-block;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 1.2rem;
-  text-transform: uppercase;
-}
-.app__month-btn {
-  display: inline-block;
-  width: 1.2rem;
-  height: 1.2rem;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-left: none;
-  border-bottom: none;
-  cursor: pointer;
-}
-.app__month-btn.left {
-  float: left;
-  -webkit-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-}
-.app__month-btn.right {
-  float: right;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.app__days {
-  height: 7rem;
-  padding: 1.5rem 2rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-}
-.app__day {
-  width: 14%;
-  text-align: center;
-  font-size: 1.2rem;
-}
-.app__day.weekday {
-  color: #919197;
-  text-transform: uppercase;
-}
-.app__day.date {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #3C3C43;
-}
-.app__meeting {
+
+.app_meeting {
   position: relative;
   height: 6rem;
   border-top: 1px solid #EEEEEF;
@@ -372,42 +289,42 @@ input, button {
           transform: translateY(-50%);
   opacity: 0;
 }
-.app__meeting:nth-child(1) {
+.app_meeting:nth-child(1) {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
-.app__meeting:nth-child(2) {
+.app_meeting:nth-child(2) {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
-.app__meeting:nth-child(3) {
+.app_meeting:nth-child(3) {
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
-.app__meeting:nth-child(4) {
+.app_meeting:nth-child(4) {
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
-.app__meeting:nth-child(5) {
+.app_meeting:nth-child(5) {
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
 }
-.app__meeting-photo {
+.app_meeting-photo {
   position: absolute;
   left: 2rem;
   top: 1rem;
   width: 4rem;
   height: 4rem;
 }
-.app__meeting-name {
+.app_meeting-name {
   color: #000;
   font-size: 1.3rem;
 }
-.app__meeting-info {
+.app_meeting-info {
   color: #949498;
   font-size: 1.1rem;
 }
-.app__logout {
+.app_logout {
   position: absolute;
   top: 0.5rem;
   right: 3.3rem;
@@ -425,7 +342,7 @@ input, button {
       -ms-transform: scale(0);
           transform: scale(0);
 }
-.app__logout.clicked {
+.app_logout.clicked {
   bottom: 50%;
   right: 50%;
   -webkit-transform: scale(30) !important;
@@ -433,10 +350,10 @@ input, button {
           transform: scale(30) !important;
   opacity: 0.9;
 }
-.app__logout.clicked svg {
+.app_logout.clicked svg {
   opacity: 0;
 }
-.app__logout-icon {
+.app_logout-icon {
   position: absolute;
   width: 3rem;
   height: 3rem;
@@ -447,7 +364,7 @@ input, button {
   -webkit-transition: opacity 0.1s;
           transition: opacity 0.1s;
 }
-.app__logout-icon path {
+.app_logout-icon path {
   stroke-width: 4px;
   stroke-dasharray: 64.36235046386719;
   stroke-dashoffset: 64.36235046386719;

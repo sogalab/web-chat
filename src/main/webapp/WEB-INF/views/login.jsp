@@ -19,82 +19,82 @@
 	<div class="bg">
 
 	    <div class="app">
-	      <div class="app__top" style="height:16rem;">
-	        <div class="app__menu-btn">
+	      <div class="app_top">
+	        <div class="app_menu-btn">
 	          <span></span>
 	        </div>
-	        <p class="app__hello" style="margin-bottom:2rem;">Fan Yongliang</p>
-	        <div class="app__user" style="margin-bottom:0;">
-	          <img src="/webchat/resources/images/head.png" alt="" class="app__user-photo" style="border-color:#fff6d9;border:3px solid transparent;" />
+	        <p class="app_hello">Fan Yongliang</p>
+	        <div class="app_user">
+	          <img src="/webchat/resources/images/head.png" alt="" class="app_user-photo" />
 	        </div>
 	      </div>
-	      <div class="app__bot" style="height:36rem;">
-	        <div class="app__meetings">
-	          <div class="app__meeting">
-	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
-	            <p class="app__meeting-name">Feed the cat</p>
+	      <div class="app_bot">
+	        <div class="app_meetings">
+	          <div class="app_meeting">
+	            <img src="/webchat/resources/images/head.png" alt="" class="app_meeting-photo" />
+	            <p class="app_meeting-name">Feed the cat</p>
 	            <br />
-	            <p class="app__meeting-info">
-	              <span class="app__meeting-time">8 - 10am</span>
-	              <span class="app__meeting-place">Real-life</span>
+	            <p class="app_meeting-info">
+	              <span class="app_meeting-time">8 - 10am</span>
+	              <span class="app_meeting-place">Real-life</span>
 	            </p>
 	          </div>
-	          <div class="app__meeting">
-	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
-	            <p class="app__meeting-name">Feed the cat!</p>
+	          <div class="app_meeting">
+	            <img src="/webchat/resources/images/head.png" alt="" class="app_meeting-photo" />
+	            <p class="app_meeting-name">Feed the cat!</p>
 	            <br />
-	            <p class="app__meeting-info">
-	              <span class="app__meeting-time">1 - 3pm</span>
-	              <span class="app__meeting-place">Real-life</span>
+	            <p class="app_meeting-info">
+	              <span class="app_meeting-time">1 - 3pm</span>
+	              <span class="app_meeting-place">Real-life</span>
 	            </p>
 	          </div>
-	          <div class="app__meeting">
-	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
-	            <p class="app__meeting-name">FEED THIS CAT ALREADY!!!</p>
+	          <div class="app_meeting">
+	            <img src="/webchat/resources/images/head.png" alt="" class="app_meeting-photo" />
+	            <p class="app_meeting-name">FEED THIS CAT ALREADY!!!</p>
 	            <br />
-	            <p class="app__meeting-info">
-	              <span class="app__meeting-time">This button is just for demo ></span>
+	            <p class="app_meeting-info">
+	              <span class="app_meeting-time">This button is just for demo ></span>
 	            </p>
 	          </div>
-	          <div class="app__meeting">
-	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
-	            <p class="app__meeting-name">FEED THIS CAT ALREADY!!!</p>
+	          <div class="app_meeting">
+	            <img src="/webchat/resources/images/head.png" alt="" class="app_meeting-photo" />
+	            <p class="app_meeting-name">FEED THIS CAT ALREADY!!!</p>
 	            <br />
-	            <p class="app__meeting-info">
-	              <span class="app__meeting-time">This button is just for demo ></span>
+	            <p class="app_meeting-info">
+	              <span class="app_meeting-time">This button is just for demo ></span>
 	            </p>
 	          </div>
-	          <div class="app__meeting">
-	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
-	            <p class="app__meeting-name">Feed the cat!</p>
+	          <div class="app_meeting">
+	            <img src="/webchat/resources/images/head.png" alt="" class="app_meeting-photo" />
+	            <p class="app_meeting-name">Feed the cat!</p>
 	            <br />
-	            <p class="app__meeting-info">
-	              <span class="app__meeting-time">1 - 3pm</span>
-	              <span class="app__meeting-place">Real-life</span>
+	            <p class="app_meeting-info">
+	              <span class="app_meeting-time">1 - 3pm</span>
+	              <span class="app_meeting-place">Real-life</span>
 	            </p>
 	          </div>
-	          <div class="app__meeting">
-	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
-	            <p class="app__meeting-name">Feed the cat!</p>
+	          <div class="app_meeting">
+	            <img src="/webchat/resources/images/head.png" alt="" class="app_meeting-photo" />
+	            <p class="app_meeting-name">Feed the cat!</p>
 	            <br />
-	            <p class="app__meeting-info">
-	              <span class="app__meeting-time">1 - 3pm</span>
-	              <span class="app__meeting-place">Real-life</span>
+	            <p class="app_meeting-info">
+	              <span class="app_meeting-time">1 - 3pm</span>
+	              <span class="app_meeting-place">Real-life</span>
 	            </p>
 	          </div>
-	          <div class="app__meeting">
-	            <img src="/webchat/resources/images/head.png" alt="" class="app__meeting-photo" />
-	            <p class="app__meeting-name">Feed the cat!</p>
+	          <div class="app_meeting">
+	            <img src="/webchat/resources/images/head.png" alt="" class="app_meeting-photo" />
+	            <p class="app_meeting-name">Feed the cat!</p>
 	            <br />
-	            <p class="app__meeting-info">
-	              <span class="app__meeting-time">1 - 3pm</span>
-	              <span class="app__meeting-place">Real-life</span>
+	            <p class="app_meeting-info">
+	              <span class="app_meeting-time">1 - 3pm</span>
+	              <span class="app_meeting-place">Real-life</span>
 	            </p>
 	          </div>
 	        </div>
 	      </div>
-	      <div class="app__logout">
-	        <svg class="app__logout-icon svg-icon" viewBox="0 0 20 20">
+	      <div class="app_logout">
+	        <svg class="app_logout-icon svg_icon" viewBox="0 0 20 20">
 	          <path d="M6,3 a8,8 0 1,0 8,0 M10,0 10,12"/>
 	        </svg>
 	      </div>
