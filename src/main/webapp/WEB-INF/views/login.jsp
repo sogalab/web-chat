@@ -27,6 +27,22 @@
 	        <div class="app_user">
 	          <img src="/webchat/resources/images/head.png" alt="" class="app_user-photo" />
 	        </div>
+	        <div class="app_user" style="width: 14rem;">
+	        	<div>
+		        	<ul>
+		        		<li style="list-style: none;position: relative;top: 15px;left: -6px;float: left;"> 等级 </li>
+		        		<li style="background: url(/webchat/resources/images/25.gif) no-repeat;background-position: -28px;background-size: cover;height: 22px;width: 22px;list-style: none;position: relative;top: 15px;left: 0px;float: left;"></li>
+		        		<li style="background: url(/webchat/resources/images/25.gif) no-repeat;background-position: -28px;background-size: cover;height: 22px;width: 22px;list-style: none;position: relative;top: 15px;left: 6px;float: left;"></li>
+		        		<li style="background: url(/webchat/resources/images/25.gif) no-repeat;background-position: -28px;background-size: cover;height: 22px;width: 22px;list-style: none;position: relative;top: 15px;left: 12px;float: left;"></li>
+		        		<li style="background: url(/webchat/resources/images/25.gif) no-repeat;background-position: -28px;background-size: cover;height: 22px;width: 22px;list-style: none;position: relative;top: 15px;left: 18px;float: left;"></li>
+		        	</ul>
+	        	</div>
+	        	<div style="position: relative;top: 25px;">
+		        	<ul>
+		        		<li style="background: url(/webchat/resources/images/base_v.1.png) no-repeat;background-position-x: -50px;background-size: cover;height: 64px;width: 26px;list-style: none;position: relative;top: 15px;left: 0px;float: left;"></li>
+		        	</ul>
+	        	</div>
+	        </div>
 	      </div>
 	      <div class="app_bot">
 	        <div class="app_meetings">

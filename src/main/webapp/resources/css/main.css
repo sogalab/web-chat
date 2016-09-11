@@ -256,14 +256,14 @@ input, button {
   font-size: 2.2rem;
   color: #fff;
   font-weight: normal;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .app_user {
   position: relative;
   display: inline-block;
   width: 9rem;
   height: 9rem;
-  margin-bottom: 0rem;
+  margin: 0 0.5rem;
 }
 .app_user-photo {
   width: 100%;
