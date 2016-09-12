@@ -24,21 +24,22 @@
 	          <span></span>
 	        </div>
 	        <p class="app_hello">Fan Yongliang</p>
-	        <div class="app_user">
+	        <div class="app_user" style="margin:0 22px 0 0;">
 	          <img src="/webchat/resources/images/head.png" alt="" class="app_user-photo" />
 	        </div>
-	        <div class="app_user" style="width: 14rem;">
+	        <div class="app_user" style="width: 14rem;margin: 0 0 0 22px;">
 	        	<div>
 		        	<ul>
-		        		<li style="list-style: none;position: relative;top: 15px;left: -6px;float: left;"> 等级 </li>
-		        		<li style="background: url(/webchat/resources/images/25.gif) no-repeat;background-position: -28px;background-size: cover;height: 22px;width: 22px;list-style: none;position: relative;top: 15px;left: 0px;float: left;"></li>
-		        		<li style="background: url(/webchat/resources/images/25.gif) no-repeat;background-position: -28px;background-size: cover;height: 22px;width: 22px;list-style: none;position: relative;top: 15px;left: 6px;float: left;"></li>
-		        		<li style="background: url(/webchat/resources/images/25.gif) no-repeat;background-position: -28px;background-size: cover;height: 22px;width: 22px;list-style: none;position: relative;top: 15px;left: 12px;float: left;"></li>
-		        		<li style="background: url(/webchat/resources/images/25.gif) no-repeat;background-position: -28px;background-size: cover;height: 22px;width: 22px;list-style: none;position: relative;top: 15px;left: 18px;float: left;"></li>
+		        		<li style="list-style: none;position: relative;top: 15px;left: -6px;float: left;color: #fff;line-height: 22px;"> 等级: </li>
+		        		<li style="background: url(/webchat/resources/images/25.gif) no-repeat;background-position: -28px;background-size: cover;height: 22px;width: 22px;list-style: none;position: relative;top: 15px;left: 4px;float: left;"></li>
+		        		<li style="background: url(/webchat/resources/images/25.gif) no-repeat;background-position: -28px;background-size: cover;height: 22px;width: 22px;list-style: none;position: relative;top: 15px;left: 10px;float: left;"></li>
+		        		<li style="background: url(/webchat/resources/images/25.gif) no-repeat;background-position: -28px;background-size: cover;height: 22px;width: 22px;list-style: none;position: relative;top: 15px;left: 16px;float: left;"></li>
+		        		<li style="background: url(/webchat/resources/images/25.gif) no-repeat;background-position: -28px;background-size: cover;height: 22px;width: 22px;list-style: none;position: relative;top: 15px;left: 22px;float: left;"></li>
 		        	</ul>
 	        	</div>
-	        	<div style="position: relative;top: 25px;">
+	        	<div style="position: absolute;top: 35px;">
 		        	<ul>
+		        		<li style="list-style: none;position: relative;top: 15px;left: -6px;float: left;color: #fff;line-height: 22px;"> 徽章: </li>
 		        		<li style="background: url(/webchat/resources/images/base_v.1.png) no-repeat;background-position-x: -50px;background-size: cover;height: 64px;width: 26px;list-style: none;position: relative;top: 15px;left: 0px;float: left;"></li>
 		        	</ul>
 	        	</div>
@@ -245,7 +246,7 @@
 		  </div>
 	      <div class="app__bot" style="height:8rem;border-radius:8px;">
                 <span class="span-message" style="color:#aaa;position:absolute;margin:13px;">按Ctrl + Enter键发送消息</span>
-				<div id="msg" class="text-message" contenteditable="true" placeholder="按Ctrl + Enter键发送消息" style=	"border: 1px solid #c6cede !important;overflow: auto;vertical-align: top;outline: none;resize: none;border: 1px #c8c8c8 solid;box-sizing: border-box;width: 100%;margin: 0; padding: 12px;font-size: 14px;height: 8rem;color: #aaa;"></div>
+				<div id="msg" class="text-message" contenteditable="true" placeholder="按Ctrl + Enter键发送消息" style=	"border: 1px solid #c6cede !important;overflow: auto;vertical-align: top;outline: none;resize: none;border: 1px #c8c8c8 solid;box-sizing: border-box;width: 100%;margin: 0; padding: 12px;font-size: 14px;height: 8rem;color: #aaa;background: rgba(0, 0, 0, 0.5);border-radius: 8px;"></div>
 
 	        </div>
 	      </div>
