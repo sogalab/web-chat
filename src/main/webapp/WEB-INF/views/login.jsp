@@ -40,7 +40,7 @@
 	        	<div style="position: absolute;top: 35px;">
 		        	<ul>
 		        		<li style="list-style: none;position: relative;top: 15px;left: -6px;float: left;color: #fff;line-height: 22px;"> 徽章: </li>
-		        		<li style="background: url(/webchat/resources/images/base_v.1.png) no-repeat;background-position-x: -50px;background-size: cover;height: 64px;width: 26px;list-style: none;position: relative;top: 15px;left: 0px;float: left;"></li>
+		        		<li style="background: url(/webchat/resources/images/base_v.1.png) no-repeat;background-position-x: -50px;background-size: cover;height: 64px;width: 26px;list-style: none;position: relative;top: 15px;left: 0px;float: left;" alt="VIP"></li>
 		        	</ul>
 	        	</div>
 	        </div>
@@ -220,6 +220,7 @@
 				<span class="message-music" style="width: 10px;height: 10px;background: url(http://zb.666001.cc/images/icon.png) -68px -22px no-repeat;display:inline-block;margin-top:2px;"></span>
 				管理员上线了
 			</div>
+			<div class="clearboth" style="clear: both;"></div>
 			<div class="chatbox_right">
 				<div class="d1" >
 					<span class="time" >23:19:29</span>
@@ -280,6 +281,13 @@
 		    $(document).on('click', '.text-message', function (e) {
 		    	$('.span-message').text('');
 		    });
+		    
+		    String.prototype.format = function() {
+	            var args = arguments;
+	            return this.replace(/{(\d{1})}/g, function() {
+	                return args[arguments[1]];
+	            });
+	        };
 	
 		});
 	</script>
@@ -294,6 +302,36 @@
 		var fromName='${name}';
 		var to = uid == "1"?"2":"1";
 		
+		var sendTpl = '<div class="chatbox_right">'+
+							'<div class="d1" >'+
+								'<span class="time" >{0}</span>&nbsp;&nbsp;<span class="name" >{1}</span>'+
+							'</div>'+
+							'<div class="d2" >'+
+								'<img class="img" src="/webchat/resources/images/head.png" alt="" >'+
+								'<div class="corner" ></div>'+
+								'<div class="content" >{2}</div>'+
+							'</div>'+
+						'</div>'+
+						'<div class="clearboth" style="clear: both;"></div>';
+						
+		var boardTpl = '<div class="chat_msg" style="border-radius: 5px;border: 1px solid #f6f6f6;color: #fff;text-align: center;margin-bottom: 15px;padding-top: 5px;padding-bottom: 5px;">'+
+							'<div>{0}</div>'+
+							'<span class="message-music" style="width: 10px;height: 10px;background: url(http://zb.666001.cc/images/icon.png) -68px -22px no-repeat;display:inline-block;margin-top:2px;"></span>&nbsp;&nbsp;{1}'+
+						'</div>'+
+						'<div class="clearboth" style="clear: both;"></div>';
+		
+		var receiveTpl = '<div class="chatbox_left">'+
+							'<div class="d1">'+
+								'<span class="name">{0}</span>&nbsp;&nbsp;<span class="time">{1}</span>'+
+							'</div>'+
+							'<div class="d2" >'+
+								'<img class="img" src="/webchat/resources/images/head.png" alt="" >'+
+								'<div class="corner" ></div>'+
+								'<div class="content" >{2}</div>'+
+							'</div>'+
+						'</div>'+
+						'<div class="clearboth" style="clear: both;"></div>';				
+						
 		var websocket;
 		
 		if ('WebSocket' in window) {
@@ -313,7 +351,8 @@
 			var data=JSON.parse(event.data);
 			console.log("WebSocket:收到一条消息",data);
 			var textCss=data.from==-1?"sfmsg_text":"fmsg_text";
-			$("#content").append("<div class='fmsg'><label class='name'>"+data.fromName+"&nbsp;"+data.date+"</label><div class='"+textCss+"'>"+data.text+"</div></div>");
+			//<div class='fmsg'><label class='name'>"+data.fromName+"&nbsp;"+data.date+"</label><div class='"+textCss+"'>"+data.text+"</div></div>
+			$("#content").append(receiveTpl.format(data.fromName,data.date,data.text));
 			scrollToBottom();
 		};
 		
@@ -338,7 +377,8 @@
 				data["to"]=to;
 				data["text"]=v;
 				websocket.send(JSON.stringify(data));
-				$("#content").append("<div class='tmsg'><label class='name'>我&nbsp;"+new Date().Format("yyyy-MM-dd hh:mm:ss")+"</label><div class='tmsg_text'>"+data.text+"</div></div>");
+				//<div class='tmsg'><label class='name'>我&nbsp;"+new Date().Format("yyyy-MM-dd hh:mm:ss")+"</label><div class='tmsg_text'>"+data.text+"</div></div>
+				$("#content").append(sendTpl.format(new Date().Format("yyyy-MM-dd hh:mm:ss"),"我",data.text));
 				scrollToBottom();
 				$("#msg").html("");
 			}
